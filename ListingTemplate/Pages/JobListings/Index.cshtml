@@ -1,4 +1,30 @@
 ﻿@page
 @model ListingTemplate.Pages.JobListings.IndexModel
-@{
-}
+
+<div class="container p-3">
+    <div class="row p-1">
+        <div class="col-6">
+            <h2 style="color:darkorange">All Available Listings</h2>
+        </div>
+        <div class="col-6", dir="rtl">
+            <a asp-page="Create" class="btn btn-primary" , style="background-color:lightyellow; color:black; border-color:darkgoldenrod">
+                Post Job Advertisement
+            </a>
+        </div>
+    </div>
+
+    <br />
+
+    @foreach (var obj in Model.JobListings)
+    {
+        <div class="container p-3 border">
+            <h4 title="Redirecting to an individual page is not inplemented", style="background-color:khaki;">@obj.Title</h4>
+            <br />
+            <p dir="rtl" , style="color:darkslategray">@obj.Created.ToString("dd-MM-yyyy")</p>
+            <hr />
+        </div>
+        <br />
+    }
+
+</div>
+
