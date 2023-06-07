@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListingTemplate", "ListingTemplate\ListingTemplate.csproj", "{430A5ECA-5911-4591-B413-A1D0D727F882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingTemplate", "ListingTemplate\ListingTemplate.csproj", "{430A5ECA-5911-4591-B413-A1D0D727F882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

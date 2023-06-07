@@ -1,0 +1,29 @@
+﻿@page
+@model ListingTemplate.Pages.JobListings.CreateModel
+
+<form method="post">
+    <div class="border p-4 m-5">
+        <div class="row pb-2">
+            <h3>Job Listing</h3>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div>
+            <input asp-for="@Model.JobListing.Title" placeholder="Title" maxlength="150" style="border-color:white; font-size:larger"/>
+            <span asp-validation-for="@Model.JobListing.Title" class="test-danger"></span>
+            <br /> <br />
+        </div>
+        <div>
+            <textarea asp-for="@Model.JobListing.Description" class="form-control" rows="20" cols="20" placeholder="Enter detail about your advertisement here" style="font-size:large"></textarea>
+            <span asp-validation-for="@Model.JobListing.Description" class="test-danger"></span>
+        </div>
+        <hr />
+        <button type="submit" class="btn btn-primary" style="background-color: white; color:black; border-color:black">Sumbit</button>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

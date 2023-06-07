@@ -18,6 +18,11 @@ namespace ListingTemplate.Model
 
         [Required]
         public DateTime Created { get; set; }
+        public JobListing()
+        {
+            Author = "Unknown";
+            Created = DateTime.Now;
+        }
 
     }
 }
