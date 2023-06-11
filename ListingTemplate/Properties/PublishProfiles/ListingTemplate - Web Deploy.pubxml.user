@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA998+r+iUBE6+qw3bWnFuPgAAAAACAAAAAAAQZgAAAAEAACAAAADvK/zIfR6wGaLspdOEGYeEPYPcd2i3zfcWdR32F5mbrgAAAAAOgAAAAAIAACAAAAAL+ATaucfLZuCXXKThMCL79s3Hj9vw4DoqJHnY2RaytoAAAADeqD4k4rDf0TLFyHbWLUXeLFs3pr+RXrE0KGTDqgoaPZck+17TErojLqTF2jozU5AwunMNheqKzQWwhxNXknESIOhY4RhUyErzlk1YVFxHsBqO8jC7ukog7Yr0fFRSCwZS1TAMhqaf8v/PZ8NsnEUoBAuoFBvDIgICy2fuLp7xzEAAAAB8W1x3fju3al/QQzd8XqchASQCOw1AkSuDM5kctACzEM2hoOUefR/9DRVIUBc4QgAiPhE501acJB9fsU5l9xoq</EncryptedPassword>
+    <History>True|2023-06-11T16:06:04.2421980Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:job-listing-server.database.windows.net,1433%3bInitial Catalog=JobListing_db%3bUser Id=admin-joblistings%40job-listing-server%3bPassword=1Undertale1</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ListingTemplate.Data.ApplicationDbContext">
+      <Value>Server=tcp:job-listing-server.database.windows.net,1433%3bInitial Catalog=JobListing_db%3bPersist Security Info=False%3bUser ID=admin-joblistings%3bPassword=1Undertale1%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
